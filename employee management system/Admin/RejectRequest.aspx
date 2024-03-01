@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="AllRequest.aspx.cs" Inherits="employee_management_system.Admin.All_Request" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="RejectRequest.aspx.cs" Inherits="employee_management_system.Admin.Reject_Request" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <div class="mt-5 ms-3 me-3 bg-white rounded shadow pt-3">
-    <div class="h1 text-center mb-3">All Leave Request List</div>
+    <div class="h1 text-center mb-3">Rejected Request List</div>
     <div class="ps-3 pe-3 pb-3">
         <table class="table border table-bordered table-hover table-striped rounded-bottom">
             <thead>

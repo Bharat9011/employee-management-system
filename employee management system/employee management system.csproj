@@ -101,8 +101,7 @@
     <Content Include="Admin\maageLeave.aspx" />
     <Content Include="Admin\mangesalary.aspx" />
     <Content Include="Admin\newLeaveRequest.aspx" />
-    <Content Include="Admin\Reject Request.aspx" />
-    <Content Include="Admin\salaryinvoice.aspx" />
+    <Content Include="Admin\RejectRequest.aspx" />
     <Content Include="Admin\showemployee.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -222,19 +221,12 @@
     <Compile Include="Admin\newLeaveRequest.aspx.designer.cs">
       <DependentUpon>newLeaveRequest.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Reject Request.aspx.cs">
-      <DependentUpon>Reject Request.aspx</DependentUpon>
+    <Compile Include="Admin\RejectRequest.aspx.cs">
+      <DependentUpon>RejectRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Reject Request.aspx.designer.cs">
-      <DependentUpon>Reject Request.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\salaryinvoice.aspx.cs">
-      <DependentUpon>salaryinvoice.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\salaryinvoice.aspx.designer.cs">
-      <DependentUpon>salaryinvoice.aspx</DependentUpon>
+    <Compile Include="Admin\RejectRequest.aspx.designer.cs">
+      <DependentUpon>RejectRequest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\showemployee.aspx.cs">
       <DependentUpon>showemployee.aspx</DependentUpon>

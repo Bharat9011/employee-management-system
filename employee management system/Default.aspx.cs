@@ -14,12 +14,11 @@ namespace employee_management_system
 
         protected void loginCheck(object sender, EventArgs e)
         {
-
             DataFIles dataFIles = new DataFIles();
             var data = dataFIles.validationUser(Email.Text, Password.Text);
             Session["sessionID"] = data.Item2;
-            
-            if(data.Item1 == "Admin")
+
+            if (data.Item1 == "Admin")
             {
                 Response.Redirect("~/Admin/DashBoard.aspx");
             }
