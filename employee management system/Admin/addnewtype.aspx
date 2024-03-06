@@ -12,9 +12,9 @@
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Enter Leave</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <asp:TextBox runat="server" class="form-control" ID="LeaveType"/>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <asp:Button runat="server" ID="save" type="submit" class="btn btn-primary" Text="Submit" OnClick="save_Click" />
     </div>
 
 </asp:Content>

@@ -20,7 +20,7 @@ namespace employee_management_system.Admin
             string department = DepartmentName.Text;
 
             DataFIles dataFIles = new DataFIles();
-            int result = dataFIles.checkexit("DepartmentTable", "DepartmentName", "DepartmentName=' "+ department + " '");
+            int result = dataFIles.checkexit("DepartmentTable", "DepartmentName", "DepartmentName='"+ department.Trim() + "'");
 
             if (result == 0)
             {

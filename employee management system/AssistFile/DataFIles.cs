@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 
 namespace employee_management_system.AssistFile
 {
@@ -54,13 +51,52 @@ namespace employee_management_system.AssistFile
 
         public int createDepartment(string DepartmentName)
         {
-
-            int i = 0;
-
             cmd.CommandText = "insert into DepartmentTable (DepartmentName) values ('" + DepartmentName + "')";
             cmd.ExecuteNonQuery();
 
-            return i;
+            return 0;
+        }
+
+        public int CreateLeaveType(string leave)
+        {
+
+            cmd.CommandText = "insert into LeaveType (LeaveTypeName) values ('" + leave + "')";
+            cmd.ExecuteNonQuery();
+
+            return 0;
+        }
+
+        public int SqlRun(string sql)
+        {
+            try
+            {
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+                return 1;
+            }catch (Exception) {
+                return -1;
+            }
+        }
+
+        public int getCourseID(string TableName, string columeName, string findcolume, string columeValue)
+        {
+            int result = -1;
+            try
+            {
+                string check = "select "+findcolume+" from " + TableName + " where " + columeName + "='" + columeValue + "'";
+                cmd.CommandText = check;
+                sqlr = cmd.ExecuteReader();
+                while (sqlr.Read())
+                {
+                    result = Convert.ToInt32(sqlr[findcolume]);
+                }
+                sqlr.Close();
+            }
+            catch (Exception)
+            {
+                result = -1;
+            }
+            return result;
         }
 
     }

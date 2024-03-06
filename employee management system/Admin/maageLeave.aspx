@@ -12,6 +12,26 @@
 
         <div class="p-3">
 
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CssClass="table table-hover table-striped table-bordered">
+                <Columns>
+                    <asp:BoundField DataField="id" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="id" />
+                    <asp:BoundField DataField="LeaveTypeName" HeaderText="Leave Type Name" SortExpression="LeaveTypeName" />
+                    <asp:TemplateField HeaderText="Action">
+                        <ItemTemplate>
+                            <asp:Button runat="server" ID="View" Text="View" CssClass="btn btn-info text-white" />
+
+                            <asp:Button runat="server" ID="Edit" Text="Edit" CssClass="btn btn-success text-white ms-3" />
+
+                            <asp:Button runat="server" ID="Delete" Text="Delete" CssClass="btn btn-danger text-white ms-3" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [LeaveType]"></asp:SqlDataSource>
+
+
+            <!--
             <table class="table border table-bordered table-hover table-striped rounded-bottom">
                 <thead>
                     <tr>
@@ -47,7 +67,7 @@
                     </tr>
                 </tbody>
             </table>
-
+            -->
         </div>
     </div>
 

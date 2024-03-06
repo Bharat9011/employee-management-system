@@ -103,6 +103,10 @@
     <Content Include="Admin\newLeaveRequest.aspx" />
     <Content Include="Admin\RejectRequest.aspx" />
     <Content Include="Admin\showemployee.aspx" />
+    <Content Include="App_Data\EMS.mdf" />
+    <Content Include="App_Data\EMS_log.ldf">
+      <DependentUpon>EMS.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -284,6 +288,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\ProfileImages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
