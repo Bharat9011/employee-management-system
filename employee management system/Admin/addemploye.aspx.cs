@@ -41,6 +41,16 @@ namespace employee_management_system.Admin
 
             int result = dataFIles.SqlRun(sql);
 
+            int loginresult = dataFIles.SqlRun("insert into LoginDetails (Email,Passwords,LoginType) values ('"+emails+"','"+Password+"','Employee')");
+
+            if(loginresult == 1)
+            {
+                Response.Write("<script>alert('data are save')</script>");
+            }
+            else if (loginresult == -1)
+            {
+                Response.Write("<script>alert('data are not save')</script>");
+            }
 
             //Employee Previous job Information 
 
