@@ -26,43 +26,6 @@
             </asp:GridView>
 
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [DepartmentTable]"></asp:SqlDataSource>
-            <!--
-            <table class="table border table-bordered table-hover table-striped rounded-bottom">
-                <thead>
-                    <tr>
-                        <th scope="col">sr. no</th>
-                        <th scope="col">Daprtment name</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>
-                            <button type="submit" class="btn btn-success ms-3 mb-3">Edit</button>
-                            <button type="submit" class="btn btn-danger ms-3 mb-3">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>
-                            <button type="submit" class="btn btn-success ms-3 mb-3">Edit</button>
-                            <button type="submit" class="btn btn-danger ms-3 mb-3">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>
-                            <button type="submit" class="btn btn-success ms-3 mb-3">Edit</button>
-                            <button type="submit" class="btn btn-danger ms-3 mb-3">Delete</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            -->
         </div>
     </div>
 </asp:Content>

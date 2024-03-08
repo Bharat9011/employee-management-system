@@ -6,52 +6,24 @@
 <div class="mt-5 ms-3 me-3 bg-white rounded shadow pt-3">
     <div class="h1 text-center mb-3">Rejected Request List</div>
     <div class="ps-3 pe-3 pb-3">
-        <table class="table border table-bordered table-hover table-striped rounded-bottom">
-            <thead>
-                <tr>
-                    <th scope="col">Sr No</th>
-                    <th scope="col">emp id</th>
-                    <th scope="col">leave type</th>
-                    <th scope="col">from</th>
-                    <th scope="col">to</th>
-                    <th scope="col">posting date</th>
-                    <th scope="col">status</th>
-                    <th scope="col">action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+        
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover table-responsive table-striped">
+            <Columns>
+                <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" SortExpression="EmployeeID" />
+                <asp:BoundField DataField="LeavesReason" HeaderText="LeavesReason" SortExpression="LeavesReason" />
+                <asp:BoundField DataField="LeavesStartedDate" HeaderText="LeavesStartedDate" SortExpression="LeavesStartedDate" />
+                <asp:BoundField DataField="LeavesEndDate" HeaderText="LeavesEndDate" SortExpression="LeavesEndDate" />
+                <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            </Columns>
+        </asp:GridView>
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT [EmployeeID], [LeavesReason], [LeavesStartedDate], [LeavesEndDate], [Status] FROM [LeaveRequests] WHERE ([Status] = @Status)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="Rejected" Name="Status" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+
+
     </div>
 </div>
 

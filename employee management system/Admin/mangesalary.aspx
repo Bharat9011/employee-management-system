@@ -9,83 +9,19 @@
         <div class="h1 text-center mb-3">Salary List</div>
 
         <div class="ps-3 pe-3 pb-3">
-        <table class="table border table-bordered table-hover table-striped rounded-bottom">
-            <thead>
-                <tr>
-                    <th scope="col">Sr. No</th>
-                    <th scope="col">Emp id</th>
-                    <th scope="col">Department</th>
-                    <th scope="col">Salary</th>
-                    <th scope="col">Allowance</th>
-                    <th scope="col">Total</th>
-                    <th scope="col">Creation date</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
-            </div>
+
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover table-striped">
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="Salary Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                    <asp:BoundField DataField="emailName" HeaderText="Email Name" SortExpression="emailName" />
+                    <asp:BoundField DataField="salary" HeaderText="Salary" SortExpression="salary" />
+                    <asp:BoundField DataField="Allowance_Salary" HeaderText="Allowance Salary" SortExpression="Allowance_Salary" />
+                    <asp:BoundField DataField="netSalary" HeaderText="Net Salary" SortExpression="netSalary" />
+                </Columns>
+            </asp:GridView>
+
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [Salary]"></asp:SqlDataSource>
+        </div>
     </div>
 
 </asp:Content>

@@ -3,57 +3,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <div class="mt-5 ms-3 me-3 bg-white rounded shadow pt-3">
-    <div class="h1 text-center mb-3">Approved Request List</div>
-    <div class="ps-3 pe-3 pb-3">
-        <table class="table border table-bordered table-hover table-striped rounded-bottom">
-            <thead>
-                <tr>
-                    <th scope="col">Sr No</th>
-                    <th scope="col">emp id</th>
-                    <th scope="col">leave type</th>
-                    <th scope="col">from</th>
-                    <th scope="col">to</th>
-                    <th scope="col">posting date</th>
-                    <th scope="col">status</th>
-                    <th scope="col">action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="mt-5 ms-3 me-3 bg-white rounded shadow pt-3">
+        
+        <div class="h1 text-center mb-3">Approved Request List</div>
+        
+        <div class="ps-3 pe-3 pb-3">
+        
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-striped table-hover table-responsive">
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                    <asp:BoundField DataField="EmployeeID" HeaderText="Employee ID" SortExpression="EmployeeID" />
+                    <asp:BoundField DataField="LeavesReason" HeaderText="Leaves Reason" SortExpression="LeavesReason" />
+                    <asp:BoundField DataField="LeavesStartedDate" HeaderText="Leaves Started Date" SortExpression="LeavesStartedDate" />
+                    <asp:BoundField DataField="LeavesEndDate" HeaderText="Leaves End Date" SortExpression="LeavesEndDate" />
+                    <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+                </Columns>
+            </asp:GridView>
+            
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [LeaveRequests] WHERE ([Status] = @Status)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="Approved" Name="Status" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+
+        </div>
     </div>
-</div>
 
 
 </asp:Content>
