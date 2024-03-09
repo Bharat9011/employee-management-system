@@ -4,7 +4,9 @@ namespace employee_management_system.Class
 {
     public class GlobleVariable
     {
-        public static int loginId;
-        public static String loginType;
+
+        private int DepartmentID;
+
+        public int departmentID { get { return DepartmentID; } set { DepartmentID = value; } }
     }
 }

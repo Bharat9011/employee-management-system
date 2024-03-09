@@ -16,7 +16,8 @@ namespace employee_management_system
         {
             DataFIles dataFIles = new DataFIles();
             var data = dataFIles.validationUser(Email.Text, Password.Text);
-            Session["sessionID"] = data.Item2;
+
+            Session["sessionID"] = data.Item1;
 
             if (data.Item1 == "Admin")
             {

@@ -13,7 +13,6 @@ namespace employee_management_system.Admin
     {
 
         DataFIles dataFIles = new DataFIles();
-        int ids;
 
         protected void Page_Load(object sender, EventArgs e)
         {

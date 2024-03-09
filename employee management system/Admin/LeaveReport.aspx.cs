@@ -14,7 +14,6 @@ namespace employee_management_system.Admin
 
         private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Connectionstr"].ConnectionString;
 
-        SqlConnection conn;
 
         protected void Page_Load(object sender, EventArgs e)
         {

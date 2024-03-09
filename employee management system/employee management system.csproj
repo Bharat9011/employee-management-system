@@ -70,7 +70,6 @@
     <Content Include="Admin\addemploye.aspx" />
     <Content Include="Admin\addnewtype.aspx" />
     <Content Include="Admin\addsalary.aspx" />
-    <Content Include="Admin\AdminAction\DepartmentView.aspx" />
     <Content Include="Admin\AllRequest.aspx" />
     <Content Include="Admin\ApprovedRequest.aspx" />
     <Content Include="Admin\CreateDaparment.aspx" />
@@ -153,13 +152,6 @@
     </Compile>
     <Compile Include="Admin\addsalary.aspx.designer.cs">
       <DependentUpon>addsalary.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AdminAction\DepartmentView.aspx.cs">
-      <DependentUpon>DepartmentView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminAction\DepartmentView.aspx.designer.cs">
-      <DependentUpon>DepartmentView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AllRequest.aspx.cs">
       <DependentUpon>AllRequest.aspx</DependentUpon>

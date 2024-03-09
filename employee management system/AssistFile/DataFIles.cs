@@ -6,14 +6,13 @@ namespace employee_management_system.AssistFile
     public class DataFIles
     {
 
-        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Connectionstr"].ConnectionString;
+        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SQLConnection"].ConnectionString;
         SqlConnection conn;
         SqlCommand cmd;
         SqlDataReader sqlr;
 
         public DataFIles()
         {
-
             conn = new SqlConnection(connectionString);
             conn.Open();
             cmd = conn.CreateCommand();
