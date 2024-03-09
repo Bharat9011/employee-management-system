@@ -29,45 +29,6 @@
             </asp:GridView>
 
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [LeaveType]"></asp:SqlDataSource>
-
-
-            <!--
-            <table class="table border table-bordered table-hover table-striped rounded-bottom">
-                <thead>
-                    <tr>
-                        <th scope="col">Sr.No</th>
-                        <th scope="col">Type of Leave</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>
-                            <button type="submit" class="btn btn-success ms-3 mb-3">Edit</button>
-                            <button type="submit" class="btn btn-danger ms-3 mb-3">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>
-                            <button type="submit" class="btn btn-success ms-3 mb-3">Edit</button>
-                            <button type="submit" class="btn btn-danger ms-3 mb-3">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>
-                            <button type="submit" class="btn btn-success ms-3 mb-3">Edit</button>
-                            <button type="submit" class="btn btn-danger ms-3 mb-3">Submit</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            -->
         </div>
     </div>
 

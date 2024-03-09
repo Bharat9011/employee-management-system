@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace employee_management_system.Admin
+namespace employee_management_system.Admin.AdminAction
 {
-    public partial class EmployeeReport : System.Web.UI.Page
+    public partial class DepartmentView : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

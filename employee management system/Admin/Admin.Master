@@ -123,7 +123,6 @@
                         <li onclick="show6()">Report<i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></li>
                         <ul id="report" style="display: none; margin-left: 40px;">
                             <li><a class="text-white text-decoration-none" style="display: block;" href="LeaveReport.aspx">Leave Report</a></li>
-                            <li><a class="text-white text-decoration-none" style="display: block;" href="MaageLeave.aspx">Employee Report</a></li>
                         </ul>
                         <script>
                             function show6() {
@@ -156,7 +155,7 @@
                     </div>
                 </nav>
 
-                <div style="width: 80%; height: 90.90%; overflow-y: auto; scroll-behavior: smooth; border: 1px solid; position: absolute; top: 0; right: 0; margin-top: 60px; background-color: #c8c8c8;">
+                <div style="width: 80.5%; height: 91.2%; overflow-y: auto; scroll-behavior: smooth; border: 1px solid; position: absolute; top: 0; right: 0; margin-top: 60px; background-color: #c8c8c8;">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>

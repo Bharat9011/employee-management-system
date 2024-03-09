@@ -22,7 +22,7 @@ namespace employee_management_system.Admin
 
         protected void saveInfo_Click(object sender, EventArgs e)
         {
-
+            /*
             string FullName = fn.Text + " " + mn.Text + " " + ln.Text;
             string phoneN = phone.Text;
             string emails = personal_email.Text;
@@ -120,10 +120,13 @@ namespace employee_management_system.Admin
             {
                 Response.Write("<script>alert('data are not save')</script>");
             }
+
+            */
         }
 
         protected void SaveS_Click(object sender, EventArgs e)
         {
+            /*
             // Salary Information
             string emphourly = hourly.Text.Trim();
             string empmonthly = monthly.Text.Trim();
@@ -148,6 +151,7 @@ namespace employee_management_system.Admin
             {
                 Response.Write("<script>alert('data are not save')</script>");
             }
+            */
         }
     }
 }

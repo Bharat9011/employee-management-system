@@ -70,6 +70,7 @@
     <Content Include="Admin\addemploye.aspx" />
     <Content Include="Admin\addnewtype.aspx" />
     <Content Include="Admin\addsalary.aspx" />
+    <Content Include="Admin\AdminAction\DepartmentView.aspx" />
     <Content Include="Admin\AllRequest.aspx" />
     <Content Include="Admin\ApprovedRequest.aspx" />
     <Content Include="Admin\CreateDaparment.aspx" />
@@ -77,7 +78,6 @@
     <Content Include="Admin\CSS\MasterPagesStyle.css" />
     <Content Include="Admin\DashBoard.aspx" />
     <Content Include="Admin\DepartmentList.aspx" />
-    <Content Include="Admin\EmployeeReport.aspx" />
     <Content Include="Admin\images\avtar-b.jpg" />
     <Content Include="Admin\images\card-image-2.jpg" />
     <Content Include="Admin\images\profile-1 %281%29.jpg" />
@@ -96,7 +96,6 @@
     <Content Include="Admin\images\profile-cover.jpg" />
     <Content Include="Admin\images\user-icon %281%29.jpg" />
     <Content Include="Admin\images\user-icon.jpg" />
-    <Content Include="Admin\js\bootstrap4-admin-compress.min.js" />
     <Content Include="Admin\LeaveReport.aspx" />
     <Content Include="Admin\maageLeave.aspx" />
     <Content Include="Admin\mangesalary.aspx" />
@@ -155,6 +154,13 @@
     <Compile Include="Admin\addsalary.aspx.designer.cs">
       <DependentUpon>addsalary.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminAction\DepartmentView.aspx.cs">
+      <DependentUpon>DepartmentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAction\DepartmentView.aspx.designer.cs">
+      <DependentUpon>DepartmentView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AllRequest.aspx.cs">
       <DependentUpon>AllRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,13 +195,6 @@
     </Compile>
     <Compile Include="Admin\DepartmentList.aspx.designer.cs">
       <DependentUpon>DepartmentList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\EmployeeReport.aspx.cs">
-      <DependentUpon>EmployeeReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\EmployeeReport.aspx.designer.cs">
-      <DependentUpon>EmployeeReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\LeaveReport.aspx.cs">
       <DependentUpon>LeaveReport.aspx</DependentUpon>

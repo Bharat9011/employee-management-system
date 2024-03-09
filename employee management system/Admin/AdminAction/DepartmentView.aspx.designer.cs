@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace employee_management_system.Admin
+namespace employee_management_system.Admin.AdminAction
 {
 
 
-    public partial class EmployeeReport
+    public partial class DepartmentView
     {
     }
 }
