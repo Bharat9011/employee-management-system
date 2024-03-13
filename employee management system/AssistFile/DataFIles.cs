@@ -6,7 +6,7 @@ namespace employee_management_system.AssistFile
     public class DataFIles
     {
 
-        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SQLConnection"].ConnectionString;
+        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sqlConnectionForUI"].ConnectionString;
         SqlConnection conn;
         SqlCommand cmd;
         SqlDataReader sqlr;
@@ -23,7 +23,7 @@ namespace employee_management_system.AssistFile
             string logintype = "none";
             int loginID = 0;
 
-            cmd.CommandText = "select id,Email,Passwords,LoginType from [LoginDetails] where [Email]='" + email + "' and [Passwords]='" + password + "'";
+            cmd.CommandText = "select EmployeeID,Email,Passwords,LoginType from [LoginDetails] where [Email]='" + email + "' and [Passwords]='" + password + "'";
             sqlr = cmd.ExecuteReader();
             while (sqlr.Read())
             {

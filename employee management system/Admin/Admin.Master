@@ -122,7 +122,7 @@
 
                         <li onclick="show6()">Report<i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></li>
                         <ul id="report" style="display: none; margin-left: 40px;">
-                            <li><a class="text-white text-decoration-none" style="display: block;" href="LeaveReport.aspx">Leave Report</a></li>
+                            <li><a class="text-white text-decoration-none" style="display: block;" href="Reports.aspx">Leave Report</a></li>
                         </ul>
                         <script>
                             function show6() {

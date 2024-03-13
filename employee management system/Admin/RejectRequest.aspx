@@ -17,7 +17,7 @@
             </Columns>
         </asp:GridView>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT [EmployeeID], [LeavesReason], [LeavesStartedDate], [LeavesEndDate], [Status] FROM [LeaveRequests] WHERE ([Status] = @Status)">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT [EmployeeID], [LeavesReason], [LeavesStartedDate], [LeavesEndDate], [Status] FROM [LeaveRequests] WHERE ([Status] = @Status)">
             <SelectParameters>
                 <asp:Parameter DefaultValue="Rejected" Name="Status" Type="String" />
             </SelectParameters>

@@ -20,7 +20,7 @@
                 </Columns>
             </asp:GridView>
 
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [Salary]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT * FROM [Salary]"></asp:SqlDataSource>
         </div>
     </div>
 

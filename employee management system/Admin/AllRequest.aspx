@@ -17,7 +17,7 @@
         </asp:GridView>
 
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT [EmployeeID], [LeavesReason], [LeavesStartedDate], [LeavesEndDate], [Status] FROM [LeaveRequests]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT [EmployeeID], [LeavesReason], [LeavesStartedDate], [LeavesEndDate], [Status] FROM [LeaveRequests]"></asp:SqlDataSource>
 
     </div>
 </div>

@@ -95,16 +95,12 @@
     <Content Include="Admin\images\profile-cover.jpg" />
     <Content Include="Admin\images\user-icon %281%29.jpg" />
     <Content Include="Admin\images\user-icon.jpg" />
-    <Content Include="Admin\LeaveReport.aspx" />
     <Content Include="Admin\maageLeave.aspx" />
     <Content Include="Admin\mangesalary.aspx" />
     <Content Include="Admin\newLeaveRequest.aspx" />
     <Content Include="Admin\RejectRequest.aspx" />
+    <Content Include="Admin\Reports.aspx" />
     <Content Include="Admin\showemployee.aspx" />
-    <Content Include="App_Data\EMS.mdf" />
-    <Content Include="App_Data\EMS_log.ldf">
-      <DependentUpon>EMS.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -188,13 +184,6 @@
     <Compile Include="Admin\DepartmentList.aspx.designer.cs">
       <DependentUpon>DepartmentList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\LeaveReport.aspx.cs">
-      <DependentUpon>LeaveReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\LeaveReport.aspx.designer.cs">
-      <DependentUpon>LeaveReport.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\maageLeave.aspx.cs">
       <DependentUpon>maageLeave.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +211,13 @@
     </Compile>
     <Compile Include="Admin\RejectRequest.aspx.designer.cs">
       <DependentUpon>RejectRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\showemployee.aspx.cs">
       <DependentUpon>showemployee.aspx</DependentUpon>

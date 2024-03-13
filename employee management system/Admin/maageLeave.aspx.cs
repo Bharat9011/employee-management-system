@@ -10,7 +10,7 @@ namespace employee_management_system.Admin
 {
     public partial class maageLeave : System.Web.UI.Page
     {
-        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SQLConnection"].ConnectionString;
+        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sqlConnectionForUI2"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

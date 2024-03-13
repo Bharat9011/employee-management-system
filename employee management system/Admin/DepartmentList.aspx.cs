@@ -12,7 +12,7 @@ namespace employee_management_system.Admin
     public partial class DepartmentList : System.Web.UI.Page
     {
 
-        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["SQLConnection"].ConnectionString;
+        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sqlConnectionForUI"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,15 +37,13 @@ namespace employee_management_system.Admin
             GridView1.DataBind();
         }
 
-
-
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             Label id = GridView1.Rows[e.RowIndex].FindControl("Label3") as Label;
             TextBox DepartmentName = GridView1.Rows[e.RowIndex].FindControl("TextBox1") as TextBox;
-            string update = "Update DepartmentTable set DepartmentName='"+ DepartmentName.Text+"' where id="+id.Text;
-            //DataFIles dataFIles = new DataFIles();
-            //int result = dataFIles.SqlRun(update);
+            string update = "Update DepartmentTable set DepartmentName='" + DepartmentName.Text + "' where id=" + id.Text;
+            DataFIles dataFIles = new DataFIles();
+            int result = dataFIles.SqlRun(update);
 
             SqlConnection sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();
@@ -67,7 +65,7 @@ namespace employee_management_system.Admin
         {
             Label id = GridView1.Rows[e.RowIndex].FindControl("Label1") as Label;
 
-            string deleting = "delete from DepartmentTable where id="+id.Text;
+            string deleting = "delete from DepartmentTable where id=" + id.Text;
 
             SqlConnection sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();

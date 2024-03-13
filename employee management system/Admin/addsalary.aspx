@@ -8,13 +8,15 @@
 
         <p class="h2 mb-2 text-center">Add Salary</p>
 
-        <span class="w-75 bg-black mt-2 mb-2" style="height: 1px; display: block; margin-left: 80px;"></span>
+        <span class="w-75 bg-black mt-2 mb-4" style="height: 1px; display: block; margin-left: 80px;"></span>
         <div class="row">
             <div class="col-12 col-sm-10 col-md-6">
                 <div class="form-group">
+                    <label for="sy" class="col-form-label control-label">Select Employee</label>
+
                     <asp:DropDownList class="form-control" data-bs-toggle="dropdown" aria-expanded="false" ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="EmpEmail" DataValueField="EmpEmail"></asp:DropDownList>
 
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT [EmpEmail] FROM [EmployeeInformation]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT [Email] FROM [EmployeeDeatils]"></asp:SqlDataSource>
                 </div>
             </div>
 

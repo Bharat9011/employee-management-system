@@ -21,7 +21,7 @@
                 </Columns>
             </asp:GridView>
 
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Connectionstr %>" SelectCommand="SELECT * FROM [LeaveRequests] WHERE ([Status] = @Status)">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT * FROM [LeaveRequests] WHERE ([Status] = @Status)">
                 <SelectParameters>
                     <asp:Parameter DefaultValue="Pending" Name="Status" Type="String" />
                 </SelectParameters>

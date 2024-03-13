@@ -51,7 +51,7 @@
                 </Columns>
             </asp:GridView>
             
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SQLConnection %>" DeleteCommand="DELETE FROM [DepartmentTable] WHERE [id] = @id" InsertCommand="INSERT INTO [DepartmentTable] ([DepartmentName]) VALUES (@DepartmentName)" SelectCommand="SELECT * FROM [DepartmentTable]" UpdateCommand="UPDATE [DepartmentTable] SET [DepartmentName] = @DepartmentName WHERE [id] = @id">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI %>" DeleteCommand="DELETE FROM [DepartmentTable] WHERE [id] = @id" InsertCommand="INSERT INTO [DepartmentTable] ([DepartmentName]) VALUES (@DepartmentName)" SelectCommand="SELECT * FROM [DepartmentTable]" UpdateCommand="UPDATE [DepartmentTable] SET [DepartmentName] = @DepartmentName WHERE [id] = @id">
 
                 <DeleteParameters>
                     <asp:Parameter Name="id" Type="Int32" />
@@ -67,6 +67,8 @@
                 </UpdateParameters>
 
             </asp:SqlDataSource>
+
+
 
         </div>
     </div>

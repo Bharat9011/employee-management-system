@@ -1,10 +1,8 @@
-﻿x<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="LeaveReport.aspx.cs" Inherits="employee_management_system.Admin.LeaveReport" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeFile="Reports.aspx.cs" Inherits="employee_management_system.Admin.Reports" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="mt-5 ms-3 me-3 bg-white rounded shadow">
+        <div class="mt-5 ms-3 me-3 bg-white rounded shadow">
 
         <div class="h1 mb-3 ps-2 pt-2 text-center">Leave List</div>
 
@@ -26,7 +24,7 @@
 
         </div>
 
-        <asp:Button runat="server" Text="Submit" CssClass="btn btn-primary ms-3 mb-3" OnClick="Unnamed_Click" />
+        <asp:Button runat="server" Text="Submit" ID="submit" CssClass="btn btn-primary ms-3 mb-3" OnClick="submit_Click" />
 
 
         <div>
