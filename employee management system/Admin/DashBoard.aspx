@@ -20,8 +20,8 @@
                 <div class="card-body px-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div class="me-2">
-                            <div class="display-6 text-white">101.1K</div>
-                            <div class="">Registered Employess</div>
+                            <asp:Label CssClass="display-6 text-white" runat="server" Text="count" ID="setcountEMP" />
+                            <div>Registered Employess</div>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                 <div class="card-body px-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div class="me-2">
-                            <div class="display-6 text-white">12.2K</div>
+                            <asp:Label CssClass="display-6 text-white" runat="server" Text="count" ID="setcountdep" />
                             <div class="card-text">Listed Departments</div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                 <div class="card-body px-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div class="me-2">
-                            <div class="display-6 text-white">5.3K</div>
+                            <asp:Label CssClass="display-6 text-white" runat="server" Text="count" ID="setcountleave" />
                             <div class="card-text">Listed Leave Type</div>
                         </div>
                     </div>
@@ -69,8 +69,8 @@
                 <div class="card-body px-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div class="me-2">
-                            <div class="display-6 text-white">101.1K</div>
-                            <div class="">Registered Employess</div>
+                            <asp:Label CssClass="display-6 text-white" runat="server" Text="count" ID="setcountAppr" />
+                            <div class="">Approved Request</div>
                         </div>
                     </div>
                 </div>
@@ -82,8 +82,8 @@
                 <div class="card-body px-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div class="me-2">
-                            <div class="display-6 text-white">12.2K</div>
-                            <div class="card-text">Listed Departments</div>
+                            <asp:Label CssClass="display-6 text-white" runat="server" Text="count" ID="setcountRej" />
+                            <div class="card-text">Rejected Request</div>
                         </div>
                     </div>
                 </div>
@@ -95,28 +95,13 @@
                 <div class="card-body px-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div class="me-2">
-                            <div class="display-6 text-white">5.3K</div>
-                            <div class="card-text">Listed Leave Type</div>
+                            <asp:Label CssClass="display-6 text-white" runat="server" Text="count" ID="setcountpend" />
+                            <div class="card-text">Pending</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-xxl-6 col-md-7 mt-3">
-            <div class="card card-raised bg-secondary text-white">
-                <div class="card-body px-4">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <div class="me-2">
-                            <div class="display-6 text-white">5.3K</div>
-                            <div class="card-text">Listed Leave Type</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
 
 </asp:Content>

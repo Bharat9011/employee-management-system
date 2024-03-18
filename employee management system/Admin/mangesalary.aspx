@@ -10,17 +10,17 @@
 
         <div class="ps-3 pe-3 pb-3">
 
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover table-striped">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="EmployeeID" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-hover table-striped">
                 <Columns>
-                    <asp:BoundField DataField="Id" HeaderText="Salary Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                    <asp:BoundField DataField="emailName" HeaderText="Email Name" SortExpression="emailName" />
-                    <asp:BoundField DataField="salary" HeaderText="Salary" SortExpression="salary" />
-                    <asp:BoundField DataField="Allowance_Salary" HeaderText="Allowance Salary" SortExpression="Allowance_Salary" />
-                    <asp:BoundField DataField="netSalary" HeaderText="Net Salary" SortExpression="netSalary" />
+                    <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" ReadOnly="True" SortExpression="EmployeeID" />
+                    <asp:BoundField DataField="emailName" HeaderText="emailName" SortExpression="emailName" />
+                    <asp:BoundField DataField="salary" HeaderText="salary" SortExpression="salary" />
+                    <asp:BoundField DataField="Allowance_Salary" HeaderText="Allowance_Salary" SortExpression="Allowance_Salary" />
+                    <asp:BoundField DataField="netSalary" HeaderText="netSalary" SortExpression="netSalary" />
                 </Columns>
             </asp:GridView>
 
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT * FROM [Salary]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:EMSVaidehiConnectionString3 %>" SelectCommand="SELECT * FROM [Salary]" ProviderName="<%$ ConnectionStrings:EMSVaidehiConnectionString3.ProviderName %>"></asp:SqlDataSource>
         </div>
     </div>
 

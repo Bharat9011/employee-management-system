@@ -118,5 +118,33 @@ namespace employee_management_system.AssistFile
             }
             return result;
         }
+
+        public int getCount(string TableName , string wherecon)
+        {
+            int result = -1;
+            string check;
+            try
+            {
+                if (wherecon == string.Empty)
+                {
+                    check = "select count(*) as row_count from " + TableName + "";
+                } else
+                {
+                    check = "select count(*) as row_count from " + TableName + " " + wherecon;
+                }
+                cmd.CommandText = check;
+                sqlr = cmd.ExecuteReader();
+                while (sqlr.Read())
+                {
+                    result = Convert.ToInt32(sqlr["row_count"]);
+                }
+                sqlr.Close();
+            }
+            catch (Exception)
+            {
+                result = -1;
+            }
+            return result;
+        }
     }
 }
