@@ -14,9 +14,9 @@
                 <div class="form-group">
                     <label for="sy" class="col-form-label control-label">Select Employee</label>
 
-                    <asp:DropDownList class="form-control" data-bs-toggle="dropdown" aria-expanded="false" ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="EmpEmail" DataValueField="EmpEmail"></asp:DropDownList>
+                    <asp:DropDownList class="form-control" data-bs-toggle="dropdown" aria-expanded="false" ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Email" DataValueField="Email"></asp:DropDownList>
 
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sqlConnectionForUI2 %>" SelectCommand="SELECT [Email] FROM [EmployeeDeatils]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:EMSVaidehiConnectionString2 %>" SelectCommand="SELECT [Email] FROM [EmployeeDeatils]" ProviderName="<%$ ConnectionStrings:EMSVaidehiConnectionString2.ProviderName %>"></asp:SqlDataSource>
                 </div>
             </div>
 

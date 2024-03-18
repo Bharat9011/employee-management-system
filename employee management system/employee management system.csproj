@@ -101,6 +101,7 @@
     <Content Include="Admin\RejectRequest.aspx" />
     <Content Include="Admin\Reports.aspx" />
     <Content Include="Admin\showemployee.aspx" />
+    <Content Include="Admin\UpDateEmployeeDeatils.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -226,8 +227,14 @@
     <Compile Include="Admin\showemployee.aspx.designer.cs">
       <DependentUpon>showemployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\UpDateEmployeeDeatils.aspx.cs">
+      <DependentUpon>UpDateEmployeeDeatils.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpDateEmployeeDeatils.aspx.designer.cs">
+      <DependentUpon>UpDateEmployeeDeatils.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AssistFile\DataFIles.cs" />
-    <Compile Include="Class\GlobleVariable.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -277,6 +284,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Class\" />
     <Folder Include="Images\ProfileImages\" />
   </ItemGroup>
   <PropertyGroup>

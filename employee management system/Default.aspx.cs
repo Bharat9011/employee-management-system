@@ -1,5 +1,4 @@
 ﻿using employee_management_system.AssistFile;
-using employee_management_system.Class;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -15,7 +14,9 @@ namespace employee_management_system
         protected void loginCheck(object sender, EventArgs e)
         {
             DataFIles dataFIles = new DataFIles();
-            var data = dataFIles.validationUser(Email.Text, Password.Text);
+            string email = Email.Text.Trim();
+            string password = Password.Text.Trim();
+            var data = dataFIles.validationUser(email, password);
 
             Session["sessionID"] = data.Item1;
 

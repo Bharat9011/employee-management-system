@@ -6,29 +6,29 @@ namespace employee_management_system.AssistFile
     public class DataFIles
     {
 
-        private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sqlConnectionForUI"].ConnectionString;
+        //private static readonly string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sqlConnectionForUI"].ConnectionString;
         SqlConnection conn;
         SqlCommand cmd;
         SqlDataReader sqlr;
 
         public DataFIles()
         {
-            conn = new SqlConnection(connectionString);
+            conn = new SqlConnection(@"Data Source=SHRIKHRISHNA\SQLEXPRESS;Initial Catalog=EMSVaidehi;Integrated Security=True;Encrypt=False;");
             conn.Open();
             cmd = conn.CreateCommand();
         }
 
-        public (string, int) validationUser(String email, String password)
+        public (string, string) validationUser(String email, String password)
         {
             string logintype = "none";
-            int loginID = 0;
+            string loginID = "none";
 
             cmd.CommandText = "select EmployeeID,Email,Passwords,LoginType from [LoginDetails] where [Email]='" + email + "' and [Passwords]='" + password + "'";
             sqlr = cmd.ExecuteReader();
             while (sqlr.Read())
             {
                 logintype = sqlr[3].ToString().Trim();
-                loginID = int.Parse(sqlr[0].ToString().Trim());
+                loginID = sqlr[0].ToString().Trim();
             }
             sqlr.Close();
             return (logintype, loginID);
@@ -98,5 +98,25 @@ namespace employee_management_system.AssistFile
             return result;
         }
 
+        public string getID(string TableName, string columeName, string findcolume, string columeValue)
+        {
+            string result = "none";
+            try
+            {
+                string check = "select " + findcolume + " from " + TableName + " where " + columeName + "='" + columeValue + "'";
+                cmd.CommandText = check;
+                sqlr = cmd.ExecuteReader();
+                while (sqlr.Read())
+                {
+                    result = sqlr[findcolume].ToString();
+                }
+                sqlr.Close();
+            }
+            catch (Exception)
+            {
+                result = "none";
+            }
+            return result;
+        }
     }
 }

@@ -17,18 +17,23 @@ namespace employee_management_system.Admin
 
         protected void submit_Click(object sender, EventArgs e)
         {
+
+            DataFIles dataFIles = new DataFIles();
+
             string email = DropDownList1.SelectedValue;
             string salary = sy.Text.Trim();
             string Allowance_Salary = ass.Text.Trim();
             string net_salary = ns.Text.Trim();
+            string EmployeeID = dataFIles.getID("EmployeeDeatils", "Email" , "EmployeID", email);
 
-            string sql = "insert into Salary (emailName,salary,Allowance_salary,netSalary) values ('"+email+"','"+salary+"','"+Allowance_Salary+"','"+net_salary+"')";
-            DataFIles dataFIles = new DataFIles();
+
+            string sql = "insert into Salary (EmployeeID,emailName,salary,Allowance_salary,netSalary) values ('"+EmployeeID+"','" + email+"','"+salary+"','"+Allowance_Salary+"','"+net_salary+"')";
+            
             int result = dataFIles.SqlRun(sql);
 
             if (result == 1)
             {
-                Response.Write("<script>alert('data are save')</script>");
+                Response.Write("<script>alert('"+result+"')</script>");
             }
             else if (result == -1)
             {
