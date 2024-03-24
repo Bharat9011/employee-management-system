@@ -18,28 +18,28 @@ namespace employee_management_system.Admin
         {
             if (!IsPostBack)
             {
-/*                GridView1.DataSource = SqlDataSource1;
-                GridView1.DataBind();*/
+                GridView1.DataSource = SqlDataSource1;
+                GridView1.DataBind();
             }
         }
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-/*            GridView1.EditIndex = e.NewEditIndex;
+            GridView1.EditIndex = e.NewEditIndex;
             GridView1.DataSource = SqlDataSource1;
-            GridView1.DataBind();*/
+            GridView1.DataBind();
         }
 
         protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
-/*            GridView1.EditIndex = -1;
+            GridView1.EditIndex = -1;
             GridView1.DataSource = SqlDataSource1;
-            GridView1.DataBind();*/
+            GridView1.DataBind();
         }
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-/*            Label id = GridView1.Rows[e.RowIndex].FindControl("Label3") as Label;
+            Label id = GridView1.Rows[e.RowIndex].FindControl("Label3") as Label;
             TextBox DepartmentName = GridView1.Rows[e.RowIndex].FindControl("TextBox1") as TextBox;
             string update = "Update DepartmentTable set DepartmentName='" + DepartmentName.Text + "' where id=" + id.Text;
             DataFIles dataFIles = new DataFIles();
@@ -55,7 +55,7 @@ namespace employee_management_system.Admin
             GridView1.EditIndex = -1;
             SqlDataSource1.DataBind();
             GridView1.DataSource = SqlDataSource1;
-            GridView1.DataBind();*/
+            GridView1.DataBind();
 
         }
 
@@ -63,7 +63,7 @@ namespace employee_management_system.Admin
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-/*            Label id = GridView1.Rows[e.RowIndex].FindControl("Label1") as Label;
+            Label id = GridView1.Rows[e.RowIndex].FindControl("Label1") as Label;
 
             string deleting = "delete from DepartmentTable where id=" + id.Text;
 
@@ -77,8 +77,10 @@ namespace employee_management_system.Admin
             GridView1.EditIndex = -1;
             SqlDataSource1.DataBind();
             GridView1.DataSource = SqlDataSource1;
-            GridView1.DataBind();*/
+            GridView1.DataBind();
 
         }
+
+
     }
 }

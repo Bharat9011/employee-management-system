@@ -28,8 +28,8 @@ namespace employee_management_system.Admin
             string filepath = "~/Images/ProfileImages/" + fileName;
             string Password = password.Text.Trim();
             string Cpassword = cPassword.Text.Trim();
-            //string Address = Addresses.Text.Trim();
-/*
+            string Address = Addresses.Text.Trim();
+
             if (EmployeeID.Text != string.Empty || Name != string.Empty || department != string.Empty
                 || email != string.Empty || number != string.Empty || Country != string.Empty
                 || State != string.Empty || City != string.Empty || dob != string.Empty
@@ -90,7 +90,7 @@ namespace employee_management_system.Admin
             else
             {
                 Response.Write("<script>alert('Some Fields are empty')</script>");
-            }*/
+            }
         }
 
         protected (int, int) EmployeeID_TextChanged()
