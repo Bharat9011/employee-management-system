@@ -70,6 +70,47 @@ Here are some screenshots showcasing the different modules and functionality of 
 7. **Add Employee**
        <img src="https://github.com/user-attachments/assets/67c9cbd7-0022-469c-8246-2f705d7263ca" />
 
+8. **Employee List**
+      <img scr="https://github.com/user-attachments/assets/28eccd88-0ac5-4f42-81f1-4212d22648ea"/>
+
+9. **Add Salary**
+      <img src="https://github.com/user-attachments/assets/be860535-c4aa-4638-9c1f-5a40c9838fba"/>
+
+10. **Show Salary**
+      <img src="https://github.com/user-attachments/assets/43c4b59c-8639-4db4-a371-543f66825bf1"/>
+
+11. **Leave Request**
+    a. **New Leave Request**
+       <img src="https://github.com/user-attachments/assets/0e18195c-bff8-4237-9b6c-06937ea3f331"/>
+
+    b. **Approved Request List**
+       <img src="https://github.com/user-attachments/assets/785ae0a1-a936-41cf-998a-a32c454465d1"/>
+
+    c. **Rejected Request List**
+       <img src="https://github.com/user-attachments/assets/99b0afd6-2bb7-48a9-b75f-375ae81f9537"/>
+
+    d. **All Request**
+       <img src="https://github.com/user-attachments/assets/3859b81c-1cd5-40dd-8ee8-bc6861953709"/>
+
+Employee Panel
+   1. **Employee DashBoard**
+      <img src="https://github.com/user-attachments/assets/7dc5a4a0-108e-44d7-b837-a0ff31efa5e2"/>
+
+   2. **Employee Detail**
+      <img src="https://github.com/user-attachments/assets/4f93e606-93ae-4f95-b2b0-5203198724e7"/>
+
+   3. **Apply Detail**
+      <img src="https://github.com/user-attachments/assets/69a4c62c-763f-4f0a-984b-948aa9688b29"/>
+
+   4. **History Details** <br/>
+        <img src="https://github.com/user-attachments/assets/2e6edae0-1ffa-490c-9797-97586dfebf84" alt="somthing want wrong"/>
+
+   5. **Chage Password**
+        <img src="https://github.com/user-attachments/assets/2e6edae0-1ffa-499c-9797-97586dfebf84"/>
+
+
+
+
 
 ## Future Enhancements
 
